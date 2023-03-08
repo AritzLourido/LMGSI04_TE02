@@ -10,6 +10,7 @@ Asignatura: LMSGI
 Unidad: 4
 Ejercicio: Tarea Evaluación 02. XSLT
 Autoevaluación: https://docs.google.com/document/d/1UG9A2LjRcVgieyV-qeto2yV3-KAE-FzOJzyGthREC5k/edit?usp=sharing
+Página web en GitHub: https://aritzlourido.github.io/LMGSI04_TE02/index.html
 -->
 
 <xsl:template match="//reservaeventos">
