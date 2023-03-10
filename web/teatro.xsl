@@ -39,6 +39,15 @@ Página web en GitHub: https://aritzlourido.github.io/LMGSI04_TE02/index.html
 							<xsl:apply-templates select="//teatro">
 							<xsl:sort select="fechahora/@dia" order="descending" />
 							</xsl:apply-templates>
+						
+					<!-- He intentado también ponerlo de esta forma para 
+					que solo saque las obras de enero, pero no lo he conseguido:
+
+						<xsl:apply-templates select="teatro[starts-with(obra/fechahora/@dia, '2023-01')]"> 
+						<xsl:apply-templates select="teatro[substring(obra/fechahora/@dia, 6, 2) = '01']"> 
+						<xsl:sort select="fechahora/@dia" order="descending" />
+						</xsl:apply-templates>
+					-->
 
 							<xsl:apply-templates select="//teatro[obra/fechahora/@dia = '2023-01']">
 							<xsl:sort select="obra/fechahora/@dia" order="descending" />
